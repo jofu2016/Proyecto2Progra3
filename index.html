@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Salarios</title>
+    <script src="JavaScript.js" defer></script>
+</head>
+<body>
+
+<h1>Calculadora de Salarios</h1>
+
+<!-- Formulario para ingresar datos de un trabajador -->
+<div>
+    <label for="nombre">Nombre del Trabajador:</label>
+    <input type="text" id="nombre" />
+</div>
+
+<div>
+    <label for="horasNormales">Horas Normales:</label>
+    <input type="number" id="horasNormales" />
+</div>
+
+<div>
+    <label for="horasExtras">Horas Extras:</label>
+    <input type="number" id="horasExtras" />
+</div>
+
+<button onclick="calcularSalario()">Calcular Salario</button>
+<button onclick="limpiarDatos()">Limpiar Datos</button>
+
+<!-- Resultados para el trabajador actual -->
+<h2>Resultados para el Trabajador Actual:</h2>
+
+<p id="resultadoNombre"></p>
+<p id="resultadoHorasNormales"></p>
+<p id="resultadoHorasExtras"></p>
+<p id="resultadoSalarioBruto"></p>
+<p id="resultadoDeducciones"></p>
+<p id="resultadoSalarioNeto"></p>
+
+<!-- Información de cada trabajador -->
+<h2>Información de los Trabajadores:</h2>
+
+<ul id="listaTrabajadores"></ul>
+
+<p> Creado por Ethan Fuentes</p>
+</body>
+</html>
